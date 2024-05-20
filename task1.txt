@@ -1,0 +1,26 @@
+HTTP1 and HTTP2 are two different versions of the Hypertext Transfer Protocol (HTTP), which is the underlying protocol used for communication on the World Wide Web. Here are some key differences between them:
+
+Multiplexing: 
+        HTTP1 typically uses multiple connections to load resources like CSS, JavaScript, and images concurrently,
+ which can lead to inefficiencies due to the overhead of establishing and maintaining connections. HTTP2, on the other hand, 
+ supports multiplexing, allowing multiple requests and responses to be sent and received over a single connection simultaneously. 
+ This reduces latency and improves performance, especially for websites with many resources.
+
+Header Compression: 
+        HTTP1 headers are plaintext and are sent with every request and response,
+ which can consume significant bandwidth, especially for large requests or responses. 
+ HTTP2 introduces header compression, which reduces overhead by compressing headers, resulting in lower bandwidth usage and faster loading times.
+
+Server Push: 
+        In HTTP1, the server can only respond to client requests. However, HTTP2 introduces server push,
+ where the server can proactively send resources to the client before they are requested.
+ This can improve performance by reducing the number of round trips needed to load a webpage.
+
+Prioritization: HTTP2 allows clients to specify the priority of individual resources, 
+enabling more efficient resource allocation and rendering of webpages.
+
+Binary Protocol: While HTTP1 uses plaintext for communication, HTTP2 uses a binary protocol, 
+which is more efficient to parse and can be processed faster by both clients and servers.
+
+Overall, HTTP2 is designed to address the performance limitations of HTTP1 by introducing features like multiplexing,
+ header compression, server push, and prioritization, resulting in faster and more efficient web browsing experiences.
